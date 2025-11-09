@@ -40,7 +40,8 @@ int main(){
                 default: cout << "Opción no valida." << endl; break;
             } break;
 
-        case 'i'|'I':
+        case 'i':
+        case 'I':
             cout << "Yo have choosed english" << endl;
             cout << "Now choose another option" << endl;
             cout << "1.l" << endl;
