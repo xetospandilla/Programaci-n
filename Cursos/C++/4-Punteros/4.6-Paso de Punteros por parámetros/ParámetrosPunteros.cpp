@@ -36,4 +36,30 @@ Diferencias entre paso por referencia y paso de punteros.
 
     - Permite el trabajo a bajo nivel y el trabajo directo con la memoría.
 --------------------------------------------------------------------------------------------------------------------------------
+EJM:
 */
+
+#include <iostream>
+using namespace std;
+
+
+
+void cambiarValor(int* valor){
+
+    (*valor) += 5;
+
+}
+
+
+int main(){
+
+    int num = 5;
+
+    cout << "Antes de llamar a la función: " << num << endl;
+
+    cambiarValor(&num);
+
+    cout << "Después de llamar a la función: " << num << endl;
+
+}
+//------------------------------------------------------------------------------------------------------------------------------
