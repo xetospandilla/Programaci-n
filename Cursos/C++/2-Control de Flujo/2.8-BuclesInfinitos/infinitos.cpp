@@ -14,19 +14,19 @@ Bucles Infinitos
 
     - Aplicaciones que deben ejecutarse continuamente:
 
-    - Servidores, listeners (ejemplo: chat en red LAN)
+        - Servidores, listeners (ejemplo: chat en red LAN)
 
-    - Monitoreo de puertos o conexiones entrantes
+        - Monitoreo de puertos o conexiones entrantes
 
     - Sistemas embebidos y servidores:
 
-    - Programas diseñados para correr "para siempre" (hasta apagarse manualmente)
+        - Programas diseñados para correr "para siempre" (hasta apagarse manualmente)
 
-    - Interfaces de usuario o aplicaciones interactivas:
+        - Interfaces de usuario o aplicaciones interactivas:
 
-    - Juegos, sistemas que esperan entrada del usuario (ej. pulsar botón)
+        - Juegos, sistemas que esperan entrada del usuario (ej. pulsar botón)
 
-    - Monitoreo de sensores en tiempo real
+        - Monitoreo de sensores en tiempo real
 
     - Prototipado y depuración:
 

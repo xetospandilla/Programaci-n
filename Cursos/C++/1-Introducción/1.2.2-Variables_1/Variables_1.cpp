@@ -8,10 +8,10 @@ using namespace std;
 //-----------------------------------------------------------------------------------------------------
 
 int main(){
- int salario = 100;
- /*
- Con esto hemos creado una variable de tipo entero "int" y la hemos inicializado al darle un valor.
- Las variables tienen diferentes formas de incializarse, pero esta es la más básica.
+    int salario = 100;
+    /*
+    Con esto hemos creado una variable de tipo entero "int" y la hemos inicializado al darle un valor.
+    Las variables tienen diferentes formas de incializarse, pero esta es la más básica.
  */
 cout << salario << endl; //Las variables también pueden ser imprimidas en pantalla.
 //-----------------------------------------------------------------------------------------------------

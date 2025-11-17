@@ -57,15 +57,23 @@ int main(){
 //---------------------------------------------------------------------------------------------------------------------------
 //EJM 2:
     
-    int main(){
-        string s1 = "Hola";
-
-        string s2 = move(s1);//Con esto convertimos s1 en un R-Value. Además estamos moviendo su contenido a S2. Como Cx + Cv.
-
-        cout << "El contenido es: " << s1 << endl;
-        cout << "El contenido es: " << s2 << endl;
-
-        return 0;
-    }
+string mifuncion(string &&z){
     
+    z+= "Texto añadido";
+
+    return move(z);
+
+}
+
+int main(){
+    string s1 = "Hola";
+
+    string s2 = mifuncion(move(s1));//Con esto convertimos s1 en un R-Value. Además estamos moviendo su contenido a S2. Como Cx + Cv.
+
+    cout << "El contenido es: " << s1 << endl;
+    cout << "El contenido es: " << s2 << endl;
+
+    return 0;
+}
+
 //---------------------------------------------------------------------------------------------------------------------------
