@@ -20,7 +20,7 @@ vector<punto> medios(vector<punto> arr) {
     vector<punto> pmedios; // Vector para almacenar los puntos medios
 
     // Itera hasta el penúltimo elemento
-    for (int i = 0; i < arr.size() - 1; i++) {
+    for (int i = 1; i < arr.size() - 1; i++) {
         // Calcula el punto medio entre arr[i] y arr[i+1]
         double xm = (arr[i].getX() + arr[i+1].getX()) / 2.0;
         double ym = (arr[i].getY() + arr[i+1].getY()) / 2.0;

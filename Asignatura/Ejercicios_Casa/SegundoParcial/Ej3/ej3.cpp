@@ -46,7 +46,7 @@ class Circulo{
         }
 
         void setCentro(Punto centro){
-            Centro = Centro;
+            Centro = centro;
         }
         //Getters
         double getRadio(){
