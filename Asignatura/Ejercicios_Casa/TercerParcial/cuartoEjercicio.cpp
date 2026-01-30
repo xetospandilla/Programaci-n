@@ -1,11 +1,3 @@
-/*
---------------------------------------------------------------------------------------------
-Fichero: mainPruebas.cpp
-Fecha: 7-1-2026
-Descripción: Creación de la clase Polinomio en C++.
-Autor: Carlos Galán Cubells
---------------------------------------------------------------------------------------------
-*/
 //------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------
 #include <iostream>
@@ -129,39 +121,40 @@ class Polinomio{
             }
             return salida;
         }
+
+        //-------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------
+        bool igualQue(vector <double> xs){
+
+            Polinomio p1; Polinomio p2;
+
+            for(unsigned int i = 0; i < xs.size(); i++){
+                if(p1.valor(xs[i]) == p2.valor(xs[i])){
+                    return true;
+                }
+            } return false;
+        }
+
+        /* Corregido:
+        
+        bool igualQue(conts Polinomio& otro, const vector <double>& xs){
+            for(double x : xs){
+            
+                double miValor = this->valor(x);
+
+                double otroValor = otro.valor(x);
+
+                if(miValor != otroValor) return false;
+            } return true;
+        }
+        */
+        //-------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------
+    
 };
-//------------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------
-int main() {
-    cout << "=== PRUEBA POLINOMIO ===" << endl;
-
-    // 1. Creamos P1(x) = 3 + 2x^2
-    Polinomio p1;
-    p1.setCoeficiente(0, 3.0);
-    p1.setCoeficiente(2, 2.0);
-    cout << "Polinomio 1: " << p1.aTexto() << endl;
-
-    // 2. Creamos P2(x) = 1 + 5x (Uno mas pequeño)
-    Polinomio p2;
-    p2.setCoeficiente(0, 1.0);
-    p2.setCoeficiente(1, 5.0);
-    cout << "Polinomio 2: " << p2.aTexto() << endl;
-
-    // 3. SUMA (El momento de la verdad)
-    // Debería dar: (3+1) + 5x + 2x^2  ->  4 + 5x + 2x^2
-    Polinomio suma = p1.sumar(p2);
-    
-    cout << "-----------------------------" << endl;
-    cout << "SUMA (P1 + P2): " << suma.aTexto() << endl;
-    
-    // Verificaciones automáticas
-    if (suma.coeficiente(0) == 4.0 && suma.coeficiente(1) == 5.0 && suma.coeficiente(2) == 2.0) {
-        cout << "[OK] La suma es matematicamente correcta." << endl;
-    } else {
-        cout << "[ERROR] Los coeficientes no cuadran." << endl;
-    }
-
-    return 0;
-}
 //------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------

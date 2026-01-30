@@ -2,7 +2,7 @@
 --------------------------------------------------------------------------------------------
 Fichero: mainPruebas.cpp
 Fecha: 6-1-2026
-Descripción: Creación de la clase Conjunto en C++.
+Descripción: Creación de la clase Conjunto en C++ con array simple.
 Autor: Carlos Galán Cubells
 --------------------------------------------------------------------------------------------
 */

@@ -12,46 +12,46 @@ Autor: Carlos Galán Cubells
 using namespace std;
 
 class Punto {
-private: 
-    double x; 
-    double y;
+    private: 
+        double x; 
+        double y;
 
-public:
-    Punto(double X = 0, double Y = 0): x(X), y(Y) {}
+    public:
+        Punto(double X = 0, double Y = 0): x(X), y(Y) {}
 
-    double getX() { return x; }
-    double getY() { return y; }
+        double getX() { return x; }
+        double getY() { return y; }
 
-    void setX(double X) { x = X; }
-    void setY(double Y) { y = Y; }
+        void setX(double X) { x = X; }
+        void setY(double Y) { y = Y; }
 
-    double distancia(Punto p) {
-        return sqrt(pow(x - p.getX(), 2) + pow(y - p.getY(), 2));
-    }
+        double distancia(Punto p) {
+            return sqrt(pow(x - p.getX(), 2) + pow(y - p.getY(), 2));
+        }
 
-    Punto sumar(Punto p1, Punto p2) {
-        double newX = p1.getX() + p2.getX();
-        double newY = p1.getY() + p2.getY();
-        return Punto(newX, newY);
+        Punto sumar(Punto p1, Punto p2) {
+            double newX = p1.getX() + p2.getX();
+            double newY = p1.getY() + p2.getY();
+            return Punto(newX, newY);
     }
 };
 //------------------------------------------------------------------------------------------
 class Circulo {
-private:
-    double Radio; 
-    Punto Centro;
-public:
-    Circulo(double R, Punto p): Radio(R), Centro(p) {}
+    private:
+        double Radio; 
+        Punto Centro;
+    public:
+        Circulo(double R, Punto p): Radio(R), Centro(p) {}
 
-    void setRadio(double radio) { Radio = radio; }
-    void setCentro(Punto centro) { Centro = centro; }
+        void setRadio(double radio) { Radio = radio; }
+        void setCentro(Punto centro) { Centro = centro; }
 
-    double getRadio() { return Radio; }
-    Punto getCentro() { return Centro; }
+        double getRadio() { return Radio; }
+        Punto getCentro() { return Centro; }
 
-    double Perimetro() {
-        return 2 * M_PI * Radio;
-    }
+        double Perimetro() {
+            return 2 * M_PI * Radio;
+        }
 };
 //------------------------------------------------------------------------------------------
 
