@@ -10,6 +10,8 @@
     
     Funciones asíncronas: SetTimeout, Promise, async/await.
 */
+//------------------------------------------------------------------------------------------------------
+//Primeras pruebas y conceptos:
 
 var saludo = "Hola Mundo";
 console.log(saludo);
@@ -19,3 +21,17 @@ function sumar(a,b){
 }
 
 const sumar = (a,b) => { return a+b; }
+
+//------------------------------------------------------------------------------------------------------
+
+function factorial(a){
+    let n = 1; 
+
+    for(let i = 0; i < a; i++){
+        n *= i;
+    }
+
+    return n;
+}
+
+//------------------------------------------------------------------------------------------------------
