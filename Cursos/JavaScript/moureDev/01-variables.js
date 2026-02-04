@@ -23,7 +23,7 @@ aún no está declarada no lo indicará mostrando "undefined".
 
 //let
 
-var helloWorld2 = "Hello, JavaScript2";
+let helloWorld2 = "Hello, JavaScript2";
 console.log(helloWorld2);
 
 helloWorld2 = "Hola de nuevo, JavaScript2";
