@@ -10,10 +10,10 @@ Descripción: Creaación de la función filtrar, la cuál filtra los elementos d
 function filtrar(lista, condicion){
         let listaFiltrada = [];
 
-        for( let i = 0; i < listaFiltrada.length; i++){
+        for( let i = 0; i < lista.length; i++){
 
             let elemento = lista[i];
-            
+
             if(condicion(elemento)){
                 listaFiltrada.push(elemento);
             }
